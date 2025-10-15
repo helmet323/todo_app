@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+/* Basic global styles */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", "Helvetica", "Arial", sans-serif;
+  background-color: #f3f4f6; /* light gray background for the page */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+input,
+button {
+  font-family: inherit;
+}
+
+.resizable-card {
+  resize: both;
+  overflow: auto;
+  min-width: fit-content;
+  min-height: 300px;
+  max-width: 90vw;
+  max-height: 90vh;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+}
